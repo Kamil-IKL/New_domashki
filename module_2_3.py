@@ -4,4 +4,4 @@ while i < len(my_list):  # True
     if my_list[i] > 0:
         print('index', i, '=', my_list[i])
     i += 1
-print(f'Проверены все {len(my_list)} элементов списка')
+print(f'Проверены все {len(my_list)} элементы списка')
