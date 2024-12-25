@@ -9,9 +9,9 @@ def calculate_structure_sum(data):
             total += len(i)  # суммируем длину строки
         elif isinstance(i, (list, tuple, set)):  # проверяю, является ли элемент списком, кортежом или множеством
             total += calculate_structure_sum(i)  # применяю рекурсию для вложенных списков, кортежей или множеств
-        elif isinstance(i, dict):  # Проверяю, является ли элемент словарем
-            total += calculate_structure_sum(i.keys())  # Суммирую ключи
-            total += calculate_structure_sum(i.values())  # Суммирую значения
+        elif isinstance(i, dict):  # проверяю, является ли элемент словарем
+            total += calculate_structure_sum(i.keys())  # суммирую ключи
+            total += calculate_structure_sum(i.values())  # суммирую значения
 
     return total
 
